@@ -127,14 +127,15 @@ learning/MISCONCEPTIONS.md 和 learning/REVIEW_QUEUE.md。
 
 ## 当前推荐提示词
 
-P01 UART 和 P02 GPIO 的学习内容已完成，但仍需独立复测。可以直接使用：
+截至 2026-10-16，P03 已进入安全副本上板诊断；P01/P02 的独立复测缺口仍需保留。下次可以直接使用：
 
 ```text
 $s9-zynq-mentor
 
-我已完成 P01 UART 和 P02 GPIO 的学习内容。
-请先读取 learning/PROGRESS.md、MASTERY.md 和 REVIEW_QUEUE.md，
-用闭卷解释、现象预测、故障定位和最小迁移分别验收 UART 与 GPIO。
-不要重复完整教程。验收后依据证据更新掌握等级，
-再判断我是否可以进入 P03 SD/FatFs 安全审计。
+请读取 learning/PROGRESS.md、MASTERY.md、REVIEW_QUEUE.md，
+以及 learning/evidence/P03_SD_FATFS/2026-10-16_sd_not_ready_debug_session.md。
+上次已确认平台 _2 的初始化与安全 ELF 下载/运行，CMD8/CMD55 仍超时，
+C154 对地实测 3.34 V；故障未解决，U6 的供电还没测。
+先短复测输出参数和 SDK 下载配置，再从 U6 及 C150～C153 近照定位测点继续。
+请一步一步指导，不重复建工程，不把辅助构建当作独立掌握，也不提前进入 P04。
 ```

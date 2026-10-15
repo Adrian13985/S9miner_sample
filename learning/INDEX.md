@@ -24,7 +24,7 @@
 5. 按 [`AI_STUDY_GUIDE.md`](./AI_STUDY_GUIDE.md) 调用 AI，从 [`PROJECT_BACKLOG.md`](./PROJECT_BACKLOG.md) 选择能补最低先修缺口的项目。
 6. 每次学习按 [`LESSON_PROTOCOL.md`](./LESSON_PROTOCOL.md) 留下证据，并更新掌握度、误区和复习队列。
 
-当前 P01 UART 与 P02 GPIO 的学习内容已经完成，下一步先做两项独立复测，再进入 **P03 SD/FatFs 安全审计**。P00 中尚未形成证据的恢复和实验方法仍需补齐。若基线诊断显示某项已有独立迁移能力，可以凭证据跳过，而不是凭“看过”跳过。
+截至 2026-10-16，P01 UART 与 P02 GPIO 内容已完成，独立复测缺口仍保留；**P03 SD/FatFs 安全副本已辅助实现、构建并上板，但 SD 初始化仍失败**。下一次从 U6 供电检查继续：C154 对地已实测 3.34 V，CMD8/CMD55 响应超时，根因未确定。先读 [`PROGRESS.md`](./PROGRESS.md) 和 [`最新实验记录`](./evidence/P03_SD_FATFS/2026-10-16_sd_not_ready_debug_session.md)，不要重复创建工程，也不要自动进入 P04。P00 中尚未形成证据的恢复和实验方法仍需补齐。
 
 ## 系统结构
 
